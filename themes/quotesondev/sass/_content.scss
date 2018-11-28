@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+*::selection{
+	color: $color__link;
+}
+.sticky {
+	display: block;
+}
+
+// .hentry {
+// 	margin: 0 0 $base__space-unit;
+// }
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.archive .entry-content p, 
+.blog .entry-content p, 
+.single .entry-content p {
+	font-size: $font__size-medium;
+	@include tablet{
+		font-size: 1.75rem;
+	}
+	@include desktop{
+		font-size: 2.5rem;
+	}
+}
+
+.archive .entry-title, 
+.blog .entry-title, 
+.single .entry-title {
+    display: inline;
+    font-size: $font__size-medium;
+    font-weight: 400;
+	margin-bottom: 0;
+	font-weight: 100;
+}
+
+.archive .source, 
+.blog .source, 
+.single .source {
+    font-size: $font__size-medium;
+	font-style: italic;
+	font-weight: 100;
+}
+.archive .hentry {
+    border-bottom: $border-dotted;
+}
+.archive .page-title, .search .page-title {
+    border-bottom: $border-dotted;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.category-archives ul, 
+.post-archives ul, 
+.tag-archives ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.category-archives, 
+.post-archives, 
+.tag-archives{
+	font-size: 1em ;
+	margin-right: 1em;
+	@include tablet{
+		font-size: $font__size-medium;
+	}
+	@include desktop{
+		font-size: $font__size-medium;
+	}
+	li{
+		margin-bottom: .5rem;
+		margin-right: 1.125rem;
+	}
+}
+// .category-archives ul li, 
+// .post-archives, 
+// .tag-archives{
+// 		font-size: 1rem;
+// 		margin-bottom: .5rem;
+// 		margin-right: 1.125rem;
+// }
+a.tag-cloud-link {
+	font-size: 1em !important;
+	margin-right: 1em;
+	@include tablet{
+		font-size: $font__size-medium;
+	}
+	@include desktop{
+		font-size: $font__size-medium;
+	}
+}
+a{
+	text-decoration: none;
+	font-weight: 100;
+}

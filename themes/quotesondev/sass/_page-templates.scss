@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* All Archives Page */
+
+/* Submit a Quote Page */
+
+
+
+body{
+    .container {
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 2.5%;
+        width: 100%;
+        .site-header{
+            margin-top: 3rem;
+            .logo{
+                .screen-reader-text{
+                    clip: rect(1px,1px,1px,1px);
+                    position: absolute!important;
+                    height: 1px;
+                    width: 1px;
+                    overflow: hidden;
+                }
+                img {
+                    display: block;
+                    width: 300px;
+                    @include tablet{
+                        width: 500px;
+                    }
+                    @include desktop{
+                        margin: 0 auto;
+                        width: 700px;
+                    }
+                }
+            }
+        }
+        .site-content{
+                
+            @include desktop{
+                margin: 4.5rem 175px 1.5rem;
+                position: relative;
+                &::before{
+                    content: "\f10d";
+                    left: -175px;
+                    color: $color__link;
+                    font-family: FontAwesome;
+                    font-size: 125px;
+                    line-height: 125px;
+                    position: absolute;
+                    top: 0;
+                }
+                &::after{
+                    content: "\f10e";
+                    right: -175px;
+                    color: $color__link;
+                    font-family: FontAwesome;
+                    font-size: 125px;
+                    line-height: 125px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            .hentry {
+                // margin: 0 0 1.5rem;
+                
+                
+                .entry-content, .entry-summary, .page-content {
+                    margin: 1.5rem 0 0;
+                }
+                .archive .entry-meta, .blog .entry-meta, .single .entry-meta, .entry-meta {
+                    margin-bottom: 3rem;
+                    display: inline-block;
+                    @include desktop{
+                        // display: inline;
+                    }
+                    .archive .entry-title, .blog .entry-title, .single .entry-title {
+                        display: inline;
+                        font-size: $font__size-medium;
+                        font-weight: 400;
+                        margin-bottom: 0;
+                    }
+                    .archive .source, .blog .source, .single .source {
+                        font-size: $font__size-medium;
+                        font-style: italic;
+                    }
+                }
+            }
+            #new-quote-button {
+                display: block;
+            }
+        }
+    }
+
+
+    footer{
+        .site-info {
+
+            .menu-main-navigation-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 4.5rem 0 3rem;
+                @include tablet{
+                    flex-wrap: no-wrap;
+                }
+                @include desktop{
+                    justify-content: flex-end;
+                }
+                ul{
+                    display: inline-flex;
+                    list-style: none;
+                    margin: 1rem 0 0;
+                    padding: 0;
+                    li {
+                        border-right: $border-solid;
+                        line-height: 1;
+                        padding: 0 1rem;
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                        &:last-child {
+                            border-right: 0;
+
+                            @include tablet {
+                                border-right: $border-solid;
+                            }
+                            @include desktop {
+                                border-right: $border-solid;
+                            }
+                        }
+                    }
+                }
+                p {
+                    flex: 0 1 100%;
+                    line-height: 1;
+                
+                    @include tablet{
+                        display: inline-block;
+                        flex: 0 1 auto;
+                        padding-left: 1rem;
+                    }
+                    @include desktop{
+                        display: inline-block;
+                        flex: 0 1 auto;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.hentry {
+    // margin: 0 0 1.5rem;
+    .blog .entry-content, .page .entry-title {
+        margin-top: 3rem;
+        .archive .entry-content p, .blog .entry-content p, .single .entry-content p {
+            font-size: $font__size-medium;
+        }
+    }
+    .entry-content, .entry-summary, .page-content {
+        margin: 1.5rem 0 0;
+    }
+}
