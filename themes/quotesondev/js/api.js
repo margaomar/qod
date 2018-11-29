@@ -22,7 +22,7 @@
        quoteSource = post._qod_quote_source,
        quoteSourceUrl = post._qod_quote_source_url;
       // update the quote content and name of the quote person
-       $( '.entry-title' ).text('- ' + title );
+       $( '.entry-title' ).text('— ' + title );
        $( '.entry-content' ).html( content );
        //$( '.source' ).html('<a href="' + quoteSourceUrl + '">' + quoteSource +'</a>');
       //display quote source if available

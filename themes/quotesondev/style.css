@@ -390,7 +390,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:focus {
     outline: none; }
-  @media (min-width: 620px) and (max-width: 1079px) {
+  @media (min-width: 620px) {
     button,
     input[type="button"],
     input[type="reset"],
@@ -401,8 +401,7 @@ input[type="submit"] {
     input[type="button"],
     input[type="reset"],
     input[type="submit"] {
-      margin: 0 auto;
-      font-size: 1.25rem; } }
+      margin: 0 auto; } }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -418,6 +417,10 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #090;
     color: #090; }
+
+@media (min-width: 620px) {
+  input#submit {
+    margin-top: 2rem; } }
 
 /* Fields */
 input[type="text"],
@@ -474,10 +477,7 @@ textarea {
   font-size: 1rem;
   font-weight: 600;
   color: #00cc00; }
-  @media (min-width: 620px) and (max-width: 1079px) {
-    .submit-sucess-msg {
-      font-size: 1.6rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 620px) {
     .submit-sucess-msg {
       font-size: 1.6rem; } }
 
@@ -485,10 +485,7 @@ textarea {
   font-size: 1rem;
   font-weight: 600;
   color: #090; }
-  @media (min-width: 620px) and (max-width: 1079px) {
-    .submit-fail-msg {
-      font-size: 1.6rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 620px) {
     .submit-fail-msg {
       font-size: 1.6rem; } }
 
@@ -666,7 +663,7 @@ a {
 .blog .entry-content p,
 .single .entry-content p {
   font-size: 1.25rem; }
-  @media (min-width: 620px) and (max-width: 1079px) {
+  @media (min-width: 620px) {
     .archive .entry-content p,
     .blog .entry-content p,
     .single .entry-content p {
@@ -718,12 +715,7 @@ a {
 .tag-archives {
   font-size: 1em;
   margin-right: 1em; }
-  @media (min-width: 620px) and (max-width: 1079px) {
-    .category-archives,
-    .post-archives,
-    .tag-archives {
-      font-size: 1.25rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 620px) {
     .category-archives,
     .post-archives,
     .tag-archives {
@@ -737,10 +729,7 @@ a {
 a.tag-cloud-link {
   font-size: 1em !important;
   margin-right: 1em; }
-  @media (min-width: 620px) and (max-width: 1079px) {
-    a.tag-cloud-link {
-      font-size: 1.25rem; } }
-  @media (min-width: 1080px) {
+  @media (min-width: 620px) {
     a.tag-cloud-link {
       font-size: 1.25rem; } }
 
@@ -786,7 +775,7 @@ body .container {
     body .container .site-header .logo img {
       display: block;
       width: 300px; }
-      @media (min-width: 620px) and (max-width: 1079px) {
+      @media (min-width: 620px) {
         body .container .site-header .logo img {
           width: 500px; } }
       @media (min-width: 1080px) {
@@ -838,7 +827,7 @@ body footer .site-info .menu-main-navigation-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 4.5rem 0 3rem; }
-  @media (min-width: 620px) and (max-width: 1079px) {
+  @media (min-width: 620px) {
     body footer .site-info .menu-main-navigation-container {
       -ms-flex-wrap: no-wrap;
           flex-wrap: no-wrap; } }
@@ -862,10 +851,7 @@ body footer .site-info .menu-main-navigation-container {
         padding-left: 0; }
       body footer .site-info .menu-main-navigation-container ul li:last-child {
         border-right: 0; }
-        @media (min-width: 620px) and (max-width: 1079px) {
-          body footer .site-info .menu-main-navigation-container ul li:last-child {
-            border-right: 1px solid #fff; } }
-        @media (min-width: 1080px) {
+        @media (min-width: 620px) {
           body footer .site-info .menu-main-navigation-container ul li:last-child {
             border-right: 1px solid #fff; } }
   body footer .site-info .menu-main-navigation-container p {
@@ -873,14 +859,7 @@ body footer .site-info .menu-main-navigation-container {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     line-height: 1; }
-    @media (min-width: 620px) and (max-width: 1079px) {
-      body footer .site-info .menu-main-navigation-container p {
-        display: inline-block;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 auto;
-                flex: 0 1 auto;
-        padding-left: 1rem; } }
-    @media (min-width: 1080px) {
+    @media (min-width: 620px) {
       body footer .site-info .menu-main-navigation-container p {
         display: inline-block;
         -webkit-box-flex: 0;
