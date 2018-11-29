@@ -574,8 +574,10 @@ a {
   text-align: right;
   width: 50%; }
 
-.number-pagination a, .number-pagination span {
-  padding: 0 .25rem; }
+.number-pagination {
+  margin-top: 3rem; }
+  .number-pagination a, .number-pagination span {
+    padding: 0 .25rem; }
 
 /*--------------------------------------------------------------
 # Accessibility

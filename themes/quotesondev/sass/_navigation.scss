@@ -131,6 +131,9 @@ a {
 	}
 }
 
-.number-pagination a, .number-pagination span {
-    padding: 0 .25rem;
+.number-pagination {
+    margin-top: 3rem;
+	a, span {
+		padding: 0 .25rem;
+	}
 }
